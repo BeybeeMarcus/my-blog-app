@@ -5,20 +5,25 @@ import Main from './components/Main'
 import Todo from './Todo'
 import FooterMain from './components/FooterMain'
 import NotFound from './components/NotFound'
+import Action from './components/Action'
 
 
 function App() {
   return (
     <>
-    <Header></Header> 
       <Routes>
+        
         <Route element={<Main/>} >
           <Route path="/" element={<Home />} />
-          <Route Path="/Todo" element={<Todo />} />
+          <Route path="/Todo" element={<Todo />} />
         </Route>
-        {/* <Route path='*' element={<NotFound />} />     */}
+        
+        <Route path="/Action" className="dropdown-item" element={<Action />} />
+        <Route path='/*' element={<NotFound />} />
+        
+        
       </Routes>
-    <FooterMain></FooterMain> 
+    
   </>
   )
 }

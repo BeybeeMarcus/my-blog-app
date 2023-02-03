@@ -23,7 +23,7 @@ function Header() {
                                 Dropdown
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link to="/#" className="dropdown-item" >Action</Link></li>
+                                <li><Link to="/Action" className="dropdown-item" >Action</Link></li>
                                 <li><Link to="/#" className="dropdown-item" >Another action</Link></li>
                                 <li><hr className="dropdown-divider"/></li>
                                 <li><Link to="/#" className="dropdown-item" >Something else here</Link></li>
